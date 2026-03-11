@@ -1,0 +1,89 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(43,43,43);
+    height:100vh;
+    margin:0;
+}
+
+/* main chat container (like your #limit box) */
+#limit{
+    display:flex;
+    flex-direction:column;
+    background-color:rgb(251,251,251);
+    width:30vw;
+    height:50vw;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+/* chat header */
+#header{
+    display:flex;
+    align-items:center;
+    padding:1vw;
+    background-color:rgba(33,33,235,0.856);
+    color:white;
+    font-weight:bold;
+}
+
+/* messages area */
+#messages{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:1vw;
+    flex:1;
+}
+
+/* message bubbles */
+.message{
+    padding:0.7vw;
+    border-radius:12px;
+    width:fit-content;
+    max-width:18vw;
+}
+
+/* received message */
+.received{
+    background-color:rgb(230,230,230);
+}
+
+/* sent message */
+.sent{
+    background-color:rgba(33,33,235,0.856);
+    color:white;
+    align-self:flex-end;
+}
+
+/* input area */
+#input-area{
+    display:flex;
+    padding:1vw;
+    gap:0.5vw;
+}
+
+/* text input */
+#input-area input{
+    flex:1;
+    border-radius:12px;
+    border:none;
+    padding:0.7vw;
+    background-color:rgb(240,240,240);
+}
+
+/* send button (similar to your .button style) */
+.button{
+    width:5vw;
+    border:none;
+    border-radius:12px;
+    background-color:rgba(33,33,235,0.856);
+    color:white;
+    cursor:pointer;
+}
+
+/* hover like your style */
+.button:hover{
+    width:5.5vw;
+}

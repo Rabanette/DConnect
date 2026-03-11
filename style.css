@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(43, 43, 43);
+}
+
+h1{
+    color: rgba(33, 33, 235, 0.856);
+}
+
+#limit{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(251, 251, 251);
+    width: 30vw;
+    height: 50vw;
+    border-radius: 20px;
+    align-items: center;
+}
+
+#logo{
+    width: 26vw;
+    height: 15vw;
+}
+
+.button{
+    text-decoration: none;
+    width: 15vw;
+    height: 5vw;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-style: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.button:hover{
+    width: 16vw;
+    height: 5vw;
+}
