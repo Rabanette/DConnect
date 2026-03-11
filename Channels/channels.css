@@ -1,89 +1,84 @@
 body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#e5ddd5;
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color:rgb(43,43,43);
     height:100vh;
-    margin:0;
 }
 
-/* main chat container (like your #limit box) */
-#limit{
+/* Chat container */
+.chat-container{
+    width:360px;
+    height:640px;
+    background:white;
     display:flex;
     flex-direction:column;
-    background-color:rgb(251,251,251);
-    width:30vw;
-    height:50vw;
-    border-radius:20px;
+    border-radius:10px;
     overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
 }
 
-/* chat header */
-#header{
-    display:flex;
-    align-items:center;
-    padding:1vw;
-    background-color:rgba(33,33,235,0.856);
+/* Header */
+.chat-header{
+    background:#075E54;
     color:white;
+    padding:15px;
     font-weight:bold;
 }
 
-/* messages area */
-#messages{
+/* Chat messages */
+.chat-messages{
+    flex:1;
+    padding:15px;
+    overflow-y:auto;
     display:flex;
     flex-direction:column;
     gap:10px;
-    padding:1vw;
-    flex:1;
 }
 
-/* message bubbles */
+/* Message bubbles */
 .message{
-    padding:0.7vw;
+    max-width:70%;
+    padding:10px 14px;
     border-radius:12px;
-    width:fit-content;
-    max-width:18vw;
+    font-size:14px;
 }
 
-/* received message */
 .received{
-    background-color:rgb(230,230,230);
+    background:#ffffff;
+    align-self:flex-start;
+    border-bottom-left-radius:2px;
 }
 
-/* sent message */
 .sent{
-    background-color:rgba(33,33,235,0.856);
-    color:white;
+    background:#dcf8c6;
     align-self:flex-end;
+    border-bottom-right-radius:2px;
 }
 
-/* input area */
-#input-area{
+/* Input area */
+.chat-input{
     display:flex;
-    padding:1vw;
-    gap:0.5vw;
+    padding:10px;
+    background:#f0f0f0;
 }
 
-/* text input */
-#input-area input{
+.chat-input input{
     flex:1;
-    border-radius:12px;
+    padding:10px;
     border:none;
-    padding:0.7vw;
-    background-color:rgb(240,240,240);
+    border-radius:20px;
+    outline:none;
 }
 
-/* send button (similar to your .button style) */
-.button{
-    width:5vw;
+.chat-input button{
+    margin-left:8px;
     border:none;
-    border-radius:12px;
-    background-color:rgba(33,33,235,0.856);
+    background:#25D366;
     color:white;
+    padding:10px 16px;
+    border-radius:20px;
     cursor:pointer;
-}
-
-/* hover like your style */
-.button:hover{
-    width:5.5vw;
 }
