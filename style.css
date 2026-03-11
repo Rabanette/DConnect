@@ -1,42 +1,73 @@
 body{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(43, 43, 43);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(43,43,43);
+    min-height:100vh;
+    margin:0;
+    font-family:Arial, sans-serif;
 }
 
 h1{
-    color: rgba(33, 33, 235, 0.856);
+    color:rgba(33,33,235,0.856);
 }
 
+/* Main container */
 #limit{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: rgb(251, 251, 251);
-    width: 30vw;
-    height: 50vw;
-    border-radius: 20px;
-    align-items: center;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    background-color:rgb(251,251,251);
+    width:90%;
+    max-width:500px;
+    border-radius:20px;
+    align-items:center;
+    padding:20px;
+    min-height: 700px;
 }
 
+/* Logo */
 #logo{
-    width: 26vw;
-    height: 15vw;
+    width:100%;
+    max-width:350px;
+    height:auto;
 }
 
+/* Buttons */
 .button{
-    text-decoration: none;
-    width: 15vw;
-    height: 5vw;
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
-    border-style: none;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
+    text-decoration:none;
+    width:80%;
+    max-width:300px;
+    height:50px;
+    background-color:rgb(255,255,255);
+    border:none;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:0.2s;
 }
 
 .button:hover{
-    width: 16vw;
-    height: 5vw;
+    transform:scale(1.05);
+}
+
+/* Phone adjustments */
+@media (max-width:600px){
+
+    #limit{
+        width:80%;
+        padding:15px;
+        min-height: 500px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .button{
+        width:100%;
+        height:45px;
+    }
+
 }
