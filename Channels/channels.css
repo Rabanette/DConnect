@@ -8,37 +8,103 @@ body{
     height:100vh;
 }
 
-/* Chat container */
-.chat-container{
-    width:360px;
-    height:640px;
+/* Main app */
+.app{
+    width:900px;
+    height:700px;
     background:white;
     display:flex;
     flex-direction:column;
     border-radius:10px;
     overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
 }
 
-/* Header */
-.chat-header{
+/* Top nav */
+.navbar{
     background:#075E54;
     color:white;
-    padding:15px;
+    padding:12px;
+    display:flex;
+    gap:20px;
     font-weight:bold;
 }
 
-/* Chat messages */
-.chat-messages{
+/* Department bar */
+.department{
+    padding:10px;
+    background:#f5f5f5;
+    border-bottom:1px solid #ddd;
+}
+
+/* Main layout */
+.main{
+    flex:1;
+    display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+    width:220px;
+    background:#f0f0f0;
+    padding:15px;
+    border-right:1px solid #ddd;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    margin:10px 0;
+    cursor:pointer;
+}
+
+/* Content */
+.content{
     flex:1;
     padding:15px;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Tasks section */
+.tasks{
+    background:#fafafa;
+    padding:15px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    margin-bottom:10px;
+}
+
+/* Chat container */
+.chat-container{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    border:1px solid #ddd;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+/* Chat header */
+.chat-header{
+    background:#075E54;
+    color:white;
+    padding:10px;
+}
+
+/* Messages */
+.chat-messages{
+    flex:1;
+    padding:10px;
     overflow-y:auto;
     display:flex;
     flex-direction:column;
     gap:10px;
 }
 
-/* Message bubbles */
 .message{
     max-width:70%;
     padding:10px 14px;
@@ -49,16 +115,14 @@ body{
 .received{
     background:#ffffff;
     align-self:flex-start;
-    border-bottom-left-radius:2px;
 }
 
 .sent{
     background:#dcf8c6;
     align-self:flex-end;
-    border-bottom-right-radius:2px;
 }
 
-/* Input area */
+/* Input */
 .chat-input{
     display:flex;
     padding:10px;

@@ -7,25 +7,73 @@
 <!-- Link the CSS file -->
 <link rel="stylesheet" href="./channels.css">
 
-</head>
-<body>
+<div class="app">
 
-<div class="chat-container">
-
-    <div class="chat-header">
-        HouseKepping
+    <!-- NAV -->
+    <div class="navbar">
+        <div>LOGO</div>
+        <div>Início</div>
+        <div>Departamentos</div>
+        <div>Tarefas</div>
+        <div>Perfil</div>
     </div>
 
-    <div class="chat-messages">
-        <div class="message received">Hey! How are you?</div>
-        <div class="message sent">I'm good 😄 What about you?</div>
-        <div class="message received">Doing great! Working on a project.</div>
-        <div class="message sent">Nice! Good luck with it.</div>
+    <!-- Department -->
+    <div class="department">
+        Departamento: <strong>HouseKepping</strong>
     </div>
 
-    <div class="chat-input">
-        <input type="text" placeholder="Type a message">
-        <button>Send</button>
+    <!-- MAIN -->
+    <div class="main">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h4>Menu do Departamento</h4>
+            <ul>
+                <li>Chat</li>
+                <li>Tarefas</li>
+                <li>Relatórios</li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <!-- Tasks -->
+            <div class="tasks">
+                <h3>TAREFAS</h3>
+
+                <p><strong>A realizar:</strong></p>
+                <ul>
+                    <li>⬜ Criar campanha redes sociais</li>
+                    <li>⬜ Atualizar base de dados</li>
+                    <li>⬜ Reunião com equipa vendas</li>
+                </ul>
+
+                <p><strong>Concluídas:</strong></p>
+                <ul>
+                    <li>✅ Análise de métricas semanais</li>
+                    <li>✅ Atualização do website</li>
+                </ul>
+            </div>
+
+            <!-- Chat -->
+            <div class="chat-container">
+                <div class="chat-header">Chat do Departamento</div>
+
+                <div class="chat-messages">
+                    <div class="message received">João: Já finalizei a tarefa das métricas.</div>
+                    <div class="message sent">Ana: Ótimo! Vou tratar da campanha.</div>
+                    <div class="message received">Pedro: Precisamos rever os dados de vendas.</div>
+                </div>
+
+                <div class="chat-input">
+                    <input type="text" placeholder="Escrever mensagem...">
+                    <button>Enviar</button>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </div>
